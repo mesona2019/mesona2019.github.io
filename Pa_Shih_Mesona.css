@@ -2,3 +2,40 @@ html {
     scroll-behavior: smooth;
     font-family: 'Manjari', 'Noto Sans TC', sans-serif;
 }
+/* Banner + 活動 + 輪播 (瑄) */
+/* 2019-09-18 新增的 (瑄)*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#banner{
+    height: calc(100vh - 120px);
+    width: 100%;
+    background-color: red;
+}
+#activity{
+    padding-top: 120px;
+}
+.activity_1{
+    height: 310px;
+}
+.activity_2{
+    height: 310px;
+}
+/* swiper 區域 */
+#product_swiper{
+    padding-top: 120px;
+}
+.swiper-container {
+    width: 100%;
+    height: 310px;
+  }
+.bg-img {
+    background-size: cover;
+    background-position: center;
+}
+
+/* 結束 2019-09-18新增的 (瑄)*/
