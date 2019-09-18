@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Manjari', 'Noto Sans TC', sans-serif;
+}
+// Banner + 活動 + 輪播 (瑄)
+// 2019-09-18 新增的 (瑄)
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+// col-xl 和 col-md 中間的會有 col-lg，經過討論暫且不把col-lg關掉 
+
+// #activity .container {
+//     @media (min-width: 992px) {
+//         max-width: 720px;
+//     }    
+//     @media (min-width: 1200px) {
+//         max-width: 1140px;
+//     }
+// }
+#banner{
+    height: calc(100vh - 120px);
+    width: 100%;
+}
+// activity區域
+#activity{
+    padding-top: 120px;
+
+    .activity-img-1{
+        height: 310px;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .activity-img-2{
+        height: 310px;
+        background-size: cover;
+        background-position: center;
+    
+    }
+}
+// swiper 區域
+#product-swiper{
+    padding-top: 120px;
+    .swiper-container {
+        width: 100%;
+        height: 310px;
+      }
+    .bg-img {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+// 結束 2019-09-18新增的 (瑄)

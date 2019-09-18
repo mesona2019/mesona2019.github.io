@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="Pa_Shih_Mesona.css">
     <!--  2019-09-18 (瑄) 我載入swiper的css -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!--  2019-09-18 (瑄) 我載入scss 的 css-->
+    <link rel="stylesheet" href="./css(瑄)/style.css">
     <!-- 2019-09-18 (瑄)  -->
 
 </head>
@@ -22,24 +24,26 @@
 <body>
     <nav></nav>
     <!-- banner區域 -->
-    <section id="banner"></section>
+    <section id="banner">
+        <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" width="100%" height="100%">
+    </section>
     <!--  activity區域 -->
     <section id="activity">
         <div class="container">
             <div class="row">
-                <div class="activity_1 col-md-6">
-                    <img src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                        alt="" height="100%">
+                <div class="activity-1 col-xl-6 col-md-6">
+                    <div class="activity-img-1" style="background-image: url('https://images.unsplash.com/photo-1472491235688-bdc81a63246e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')">
+                    </div>
                 </div>
-                <div class="activity_2 col-md-6">
-                    <img src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                        alt="" height="100%">
+                <div class="activity-2 col-xl-6 col-md-6">
+                        <div class="activity-img-2" style="background-image: url('https://images.unsplash.com/photo-1517451330947-7809dead78d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')">
+                        </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- swiper區域 -->
-    <section id="product_swiper">
+    <section id="product-swiper" class="col-xl-12 col-md-12">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide bg-img"
@@ -52,7 +56,7 @@
                     style="background-image: url('https://images.unsplash.com/photo-1507984211203-76701d7bb120?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')">
                 </div>
             </div>
-            <!-- Add Pagination -->
+            <!-- Add Pagination -->     
             <div class="swiper-pagination swiper-pagination-white"></div>
             <!-- Add Arrows -->
             <div class="swiper-button-next"></div>
