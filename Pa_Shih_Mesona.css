@@ -5,11 +5,13 @@ h1 {
     font-family: 'Manjari', 'Noto Sans TC', sans-serif;
     margin: 0;
     font-size: 40px;
+    line-height: normal;
 }
 p {
     font-family: 'Manjari', 'Noto Sans TC', sans-serif;
     margin: 0;
     font-size: 26px;
+    line-height: normal;
 }
 /* Banner + 活動 + 輪播 (瑄) */
 /* 2019-09-18 新增的 (瑄)*/
