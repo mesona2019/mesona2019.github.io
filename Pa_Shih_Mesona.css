@@ -38,3 +38,27 @@ body{
 }
 
 /* 結束 2019-09-18新增的 (瑄)*/
+
+/*  開始2019-09-19 新增的 (lynn) */
+@media (min-width: 1200px) {}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    background-color: rgb(216, 253, 205);
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(216, 215, 215, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.mr-up {
+    margin: 50px 0 0 0;
+}
+
+/* 結束 2019-09-19 新增的 (lynn)*/
