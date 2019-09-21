@@ -81,6 +81,9 @@ body{
 /* ↑↑ Mesona Introduce--by sui ↑↑ 2019-09-21新增 */
 
 /* ↓↓ Menu--by sui ↓↓ 2019-09-21新增 */
+#menu {
+    padding-top: 120px;
+}
 .cursor {
     cursor: pointer;
 }
