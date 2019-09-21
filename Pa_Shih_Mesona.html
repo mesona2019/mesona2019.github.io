@@ -22,7 +22,48 @@
 </head>
 
 <body>
-    <nav></nav>
+    <!-- ↓↓ Navbar--by sui ↓↓ 2019-09-21新增 -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: rgb(164, 241, 195)">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="八時神仙草" style="height: 120px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto flex-row justify-content-md-end justify-content-between">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary btn-lg btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><p class="d-inline">關於</p></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#story"><p>八時神仙草的故事</p></a>
+                            <a class="dropdown-item" href="#about"><p>關於我們</p></a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary btn-lg btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><p class="d-inline">產品</p></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#mesona"><p>關於仙草</p></a>
+                            <a class="dropdown-item" href="#menu"><p>菜單</p></a>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#interview"><p>採訪</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#contact"><p>聯絡</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#join"><p>加盟</p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ↑↑ Navbar--by sui ↑↑ 2019-09-21新增 -->
+    
     <!-- banner區域 -->
     <section id="banner">
         <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" width="100%" height="100%">
@@ -68,8 +109,232 @@
     <section id="story"></section>
     <section id="about"></section>
 
-    <section id="mesona"></section>
-    <section id="menu"></section>
+    <!-- ↓↓ Mesona Introduce--by sui ↓↓ 2019-09-21新增 -->
+    <section id="mesona" class="container">
+        <h1 title="八時神仙草">八時神仙草</h1>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-3">
+                <img src="./img/mesona.jpg" alt="仙草" style="width: 100%; padding-bottom: 60px">
+            </div>
+            <div class="col-xl-9 col-12 text-justify">
+                <p>關於仙草</p>
+                <p>中藥大辭典綜合以上認為：『仙草具有清熱、解暑、除熱毒之功。治中暑、消渴、高血壓、肌肉及關節疼痛』；又另敘：『仙人凍，一名涼粉草，全草治花柳入骨。』；又在福建藥物志：『仙草及敗醬草各30公克，水煎服，治痢疾。』。</p>
+                <p>仙草具有良好的抗氧化及抗致突變的作用（仙草茶可以去除自由基，其清除超氧陰離子的效果達91.5%）。</p>
+                <p>根據高雄醫學大學及屏東科技大學的研究，發現仙草的抽出及萃取物對各種抗突變測試具有良好的功效。<br>總結仙草大致功效；生津止渴、清熱利濕、涼血解暑、抗發炎，外加養顏美容。</p>
+                <p>但是仙草性屬偏寒，應適量攝取，體質較涼的人更要注意。</p>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-xl-8 col-12 text-justify order-xl-0 order-1">
+                <p>專業，是只堅持做好一件事。</p>
+                <p>專精的研究使我們對仙草擁有更深層的認識，我們想挖掘仙草的更多的可能，做出和市場的區別擁有屬於「八時神仙草」的獨特性。</p>
+                <p>無鹼、不添加化學的食材原味，提煉仙草天然的膠質，呈現的是口感滑嫩且清香回甘，帶有透光的琥珀色，讓大家認識仙草的真正樣貌。</p>
+                <p>我們土法煉鋼的多方嘗試想掌控好品質，無論這過程多艱難及辛苦，都想帶給大家始終如一的感受。</p>
+                <p>很多人問為什麼「八時神仙草」的仙草雪花冰不會很快融化？因為我們是用全嫩仙草凍製成的冰磚，每口都吃得到仙草，也因仙草的膠質在融化時變成很綿密的冰晶，才能夠感受食材的原味，享用完一份也不會感覺很有負擔，反而欲罷不能。</p>
+            </div>
+            <div class="col-4">
+                <img src="./img/brand story-4.jpg" alt="柴燒仙草" style="width: 100%; padding-bottom: 60px">
+            </div>
+        </div>
+    </section>
+    <!-- ↑↑ Mesona Introduce--by sui ↑↑ 2019-09-21新增 -->
+    <!-- ↓↓ Menu--by sui ↓↓ 2019-09-21新增 -->
+    <section id="menu" class="container">
+        <p class="text-center">菜單</p>
+        <div class="menu_1 row flex-md-wrap">
+            <div class="col-lg-6 col-12">
+                <div class="row mt-3">
+                    <div class="col cursor">
+                        <div class="menu_img hover_shadow menu_a" onclick="openModal_1();currentSlide(1)"></div>
+                        <p class="text-center
+                        ">萃嫩系列</p>
+                    </div>
+                    <div class="col cursor">
+                        <div class="menu_img hover_shadow menu_b" onclick="openModal_1();currentSlide(2)"></div>
+                        <p class="text-center
+                        ">萃雪系列</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row mt-3">
+                    <div class="col cursor">
+                        <div class="menu_img hover_shadow menu_c" onclick="openModal_1();currentSlide(3)"></div>
+                        <p class="text-center
+                        ">冰沙系列</p>
+                    </div>
+                    <div class="col cursor">
+                        <div class="menu_img hover_shadow menu_d" onclick="openModal_1();currentSlide(4)"></div>
+                        <p class="text-center
+                        ">萃茶系列</p>
+                    </div>
+                    <div class="col cursor">
+                        <div class="menu_img hover_shadow menu_e" onclick="openModal_1();currentSlide(5)"></div>
+                        <p class="text-center
+                        ">黑糖系列</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu_group" class="modal">
+            <span class="close cursor" onclick="closeModal_1()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <div class="menu_img menu_a float-left"></div>
+                    <div class="menu_part float-right d-flex flex-wrap">
+                        <p class="text-center w-100
+                        ">萃嫩系列</p>
+                        <div class="row w-100 m-0">
+                            <div class="col w-100">
+                                純萃嫩仙草<br>芋薯圓嫩仙草<br>嫩仙草盛盤<br>芋泥嫩仙草盛盤<br>抹茶嫩仙草盛盤
+                            </div>
+                            <div class="text-right flex-shrink-1">
+                                49<br>69<br>69<br>79<br>89
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="menu_img menu_b float-left"></div>
+                    <div class="menu_part float-right d-flex flex-wrap">
+                        <p class="text-center w-100
+                        ">萃雪系列</p>
+                        <div class="row w-100 m-0">
+                            <div class="col w-100">
+                                純萃嫩仙草雪花冰<br>芋薯圓嫩仙草雪花冰<br>嫩仙草雪花盛盤<br>芋泥嫩仙草雪花盛盤<br>抹茶嫩仙草雪花盛盤
+                            </div>
+                            <div class="text-right flex-shrink-1">
+                                99<br>119<br>119<br>129<br>139
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="mySlides">
+                    <div class="menu_img menu_c float-left"></div>
+                    <div class="menu_part float-right d-flex flex-wrap">
+                        <p class="text-center w-100
+                        ">冰沙系列</p>
+                        <div class="row w-100 m-0">
+                            <div class="col w-100">
+                                仙草紫米牛奶冰沙<br>仙草紅豆牛奶冰沙<br>仙草芋泥牛奶冰沙<br>　<br>　
+                            </div>
+                            <div class="text-right flex-shrink-1">
+                                79<br>79<br>79
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="menu_img menu_d float-left"></div>
+                    <div class="menu_part float-right d-flex flex-wrap">
+                        <p class="text-center w-100
+                        ">萃茶系列</p>
+                        <div class="row w-100 m-0">
+                            <div class="col w-100">
+                                八時仙草茶<br>珍珠仙草茶<br>(珍珠)仙草奶茶<br>(珍珠)仙草茶凍<br>(珍珠)仙草凍奶茶
+                            </div>
+                            <div class="text-right flex-shrink-1">
+                                39<br>49<br>59<br>59<br>69
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="menu_img menu_e float-left"></div>
+                    <div class="menu_part float-right d-flex flex-wrap">
+                        <p class="text-center w-100
+                        ">黑糖系列</p>
+                        <div class="row w-100 m-0">
+                            <div class="col w-100">
+                                黑糖奶凍<br>珍珠黑糖奶凍
+                            </div>
+                            <div class="text-right flex-shrink-1">
+                                59<br>59<br>　<br>　<br>　
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+        </div>
+
+        <p class="text-center">～ 冬季限定 ～</p>
+        <div class="menu_2 row mt-3 justify-content-center">
+            <div class="col-lg-3 col-4 cursor">
+                <div class="menu_img hover_shadow menu_f" onclick="openModal_2();currentSlide(1)"></div>
+                <p class="text-center
+                ">燒仙草</p>
+            </div>
+            <div class="col-lg-3 col-4 cursor">
+                <div class="menu_img hover_shadow menu_g" onclick="openModal_2();currentSlide(2)"></div>
+                <p class="text-center
+                ">甜品</p>
+            </div>
+            <div class="col-lg-3 col-4 cursor">
+                <div class="menu_img hover_shadow menu_h" onclick="openModal_2();currentSlide(3)"></div>
+                <p class="text-center
+                ">黑糖系列</p>
+            </div>
+        </div>
+        <div id="menu_group_2" class="modal">
+            <span class="close cursor" onclick="closeModal_2()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides_2">
+                    <div class="menu_img menu_f float-left"></div>
+                    <div class="menu_part float-right d-flex flex-wrap">
+                        <p class="text-center w-100
+                        ">燒仙草</p>
+                        <div class="row w-100 m-0">
+                            <div class="col w-100">
+                                純萃燒仙草<br>芋薯圓燒仙草<br>燒仙草盛盤
+                            </div>
+                            <div class="text-right flex-shrink-1">
+                                49<br>69<br>69
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides_2">
+                    <div class="menu_img menu_g float-left"></div>
+                    <div class="menu_part float-right d-flex flex-wrap">
+                        <p class="text-center w-100
+                        ">甜品</p>
+                        <div class="row w-100 m-0">
+                            <div class="col w-100">
+                                純萃紫米粥/紅豆湯<br>紫米粥/紅豆湯盛盤<br>鮮奶紫米粥/紅豆湯盛盤
+                            </div>
+                            <div class="text-right flex-shrink-1">
+                                49<br>59<br>69
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides_2">
+                    <div class="menu_img menu_h float-left"></div>
+                    <div class="menu_part float-right d-flex flex-wrap">
+                        <p class="text-center w-100
+                        ">黑糖系列</p>
+                        <div class="row w-100 m-0">
+                            <div class="col w-100">
+                                黑糖薑母茶<br>黑糖薑母奶<br>　
+                            </div>
+                            <div class="text-right flex-shrink-1">
+                                59<br>79<br>　
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides_2(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides_2(1)">&#10095;</a>
+            </div>
+            
+        </div>
+    </section>
+    <!-- ↑↑ Menu--by sui ↑↑ 2019-09-21新增 -->
 
     <section id="parallax"></section>
     <section id="interview"></section>
@@ -104,7 +369,33 @@
         </div>
     </section>
 
-    <footer></footer>
+    <!-- ↓↓ footer--by sui ↓↓ 2019-09-21新增 -->
+    <footer>
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand m-0" href="#">
+                <img src="./img/logo.png" alt="八時神仙草" style="height: 120px">
+            </a>
+            <div class="flex-grow-1 d-sm-flex">
+                <h1 class="flex-grow-1 text-center">萃草一分，凝神八時</h1>
+                <div class="content text-right">
+                    <a href="https://m.me/godlike1019?fbclid=IwAR0i2KvK3O2lv-PeuXf57xrOpnWLC0s-zNdm3qd1JkWLTf9pt4WyK7VWCJA" target="_block" style="text-decoration: none">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </a>
+                    <a href="https://www.facebook.com/godlike1019/" target="_block" style="text-decoration: none">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pa_shih_shen/" target="_block" style="text-decoration: none">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            <p class="container text-right py-2 pr-3">Copyright © 2019 Mesona　-- 上課團體專案練習 --</p>
+        </div>
+    </footer>
+    <!-- ↑↑ footer--by sui ↑↑ 2019-09-21新增 -->
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -128,7 +419,60 @@
         });
     </script>
     <!--  結束 2019-09-18 (瑄) -->
+    
+    <!-- ↓↓ Menu--by sui ↓↓ 2019-09-21新增 -->
+    <script>
+        function openModal_1() {
+            document.getElementById("menu_group").style.display = "block";
+        }  
+        function closeModal_1() {
+            document.getElementById("menu_group").style.display = "none";
+        }
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
 
+        function openModal_2() {
+            document.getElementById("menu_group_2").style.display = "block";
+        }  
+        function closeModal_2() {
+            document.getElementById("menu_group_2").style.display = "none";
+        }
+        var slideIndex_2 = 1;
+        showSlides_2(slideIndex_2);
+        function plusSlides_2(n) {
+            showSlides_2(slideIndex_2 += n);
+        }
+        function currentSlide(n) {
+            showSlides_2(slideIndex_2 = n);
+        }
+        function showSlides_2(n) {
+            var i;
+            var slides_2 = document.getElementsByClassName("mySlides_2");
+            if (n > slides_2.length) {slideIndex_2 = 1}
+            if (n < 1) {slideIndex_2 = slides_2.length}
+            for (i = 0; i < slides_2.length; i++) {
+                slides_2[i].style.display = "none";
+            }
+            slides_2[slideIndex_2-1].style.display = "block";
+        }
+    </script>
+    <!-- ↑↑ Menu--by sui ↑↑ 2019-09-21新增 -->
 </body>
 
 </html>
