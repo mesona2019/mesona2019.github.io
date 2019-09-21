@@ -6,21 +6,21 @@ h1 {
     margin: 0;
     font-size: 40px;
     line-height: normal;
+    color: rgb(14, 63, 34);
 }
 p {
     font-family: 'Manjari', 'Noto Sans TC', sans-serif;
     margin: 0;
     font-size: 26px;
     line-height: normal;
+    color: rgb(14, 63, 34);
 }
 /* ↓↓ Navbar--by sui ↓↓ 2019-09-21新增 */
 nav .container ul .dropdown .btn-success {
     background-color: rgba(255, 255, 255, 0);
     border: unset;
-    color: rgb(14, 63, 34);
 }
 nav .container ul p {
-    color: rgb(14, 63, 34);
 }
 nav .container ul .dropdown-toggle::after {
     border-top-color: rgb(14, 63, 34);
@@ -71,12 +71,10 @@ body{
 
 /* ↓↓ Mesona Introduce--by sui ↓↓ 2019-09-21新增 */
 #mesona {
-    padding-top: 120px;}
-#mesona h1 {
-    padding: 60px 0;
+    padding-top: 120px;
 }
 #mesona .row p {
-    padding-bottom: 60px;
+    padding-top: 60px;
 }
 /* ↑↑ Mesona Introduce--by sui ↑↑ 2019-09-21新增 */
 
