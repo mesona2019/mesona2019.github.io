@@ -20,8 +20,6 @@ nav .container ul .dropdown .btn-success {
     background-color: rgba(255, 255, 255, 0);
     border: unset;
 }
-nav .container ul p {
-}
 nav .container ul .dropdown-toggle::after {
     border-top-color: rgb(14, 63, 34);
 }
@@ -29,6 +27,12 @@ nav .container ul .dropdown-menu {
     background-color: rgb(164, 241, 195);
     border-color: none;
     box-shadow: 0 4px 8px 0 rgba(14, 63, 34, 0.2), 0 6px 20px 0 rgba(14, 63, 34, 0.19);
+    position: absolute;
+}
+@media(max-width:576px) {
+    nav .container ul li {
+        padding-right: 17px;
+    }
 }
 /* ↑↑ Navbar--by sui ↑↑ 2019-09-21新增 */
 
