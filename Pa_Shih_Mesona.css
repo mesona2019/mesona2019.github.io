@@ -230,29 +230,6 @@ body{
 }
 /* ↑↑ Menu--by sui ↑↑ 2019-09-21新增 */
 
-/*  開始2019-09-19 新增的 (lynn) */
-@media (min-width: 1200px) {}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
-    background-color: rgb(216, 253, 205);
-    padding: 10px;
-}
-
-.grid-container>div {
-    background-color: rgba(216, 215, 215, 0.8);
-    text-align: center;
-    padding: 10px 0;
-    font-size: 15px;
-}
-
-.mr-up {
-    margin: 50px 0 0 0;
-}
-
-/* 結束 2019-09-19 新增的 (lynn)*/
 
 /* ↓↓ footer--by sui ↓↓ 2019-09-21新增 */
 footer {
@@ -292,3 +269,44 @@ footer p {
     }
 }
 /* ↑↑ footer--by sui ↑↑ 2019-09-21新增 */
+
+
+/* 開始--2019-09-22 add by Lynn */
+    /* 800px 以上顯示 */
+@media only screen and (min-width: 800px){
+    .grid-container {
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 50px 10px;
+    padding: 10px;
+}
+    .mr-lr{
+        margin:0 80px;
+}
+}
+
+/* 800px 以下顯示 */
+@media (max-width: 800px){
+    #endding_img img{
+        max-height: 310px;
+        max-width: 100%;}
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 70px 30px;
+        padding: 10px;
+}
+}
+.grid-container>div {
+    background-color:#736357;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.mr-up {
+    margin: 50px 0 0 0;
+}   
+.text-color{
+    color:white;
+}
+/* 結束--2019-09-22 add by Lynn */
