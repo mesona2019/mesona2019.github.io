@@ -13,11 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 
     <link rel="stylesheet" href="Pa_Shih_Mesona.css">
-    <!--  2019-09-18 (瑄) 我載入swiper的css -->
+    <!-- (瑄) 的 區塊 -->
+    <link rel="stylesheet" href="/mesona2019.github.io/lightbox2-2.11.1/lightbox2-2.11.1/dist/css/lightbox.min.css">
+    <!-- 載入swiper的css -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <!--  2019-09-18 (瑄) 我載入scss 的 css-->
+    <!-- 載入lightbox的css -->
+
+    <!-- <link rel="stylesheet" href="/lightbox2-2.11.1/lightbox2-2.11.1/dist/css/lightbox.css"> -->
+    <!-- 載入scss 的 css-->
     <link rel="stylesheet" href="./css(瑄)/style.css">
-    <!-- 2019-09-18 (瑄)  -->
+
+    <!-- (瑄) 的 區塊 -->
 
 </head>
 
@@ -90,46 +96,211 @@
 
     <!-- banner區域 -->
     <section id="banner">
-        <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-            alt="" width="100%" height="100%">
+        <div class="banner-outer" style="background-image: url('img/banner.jpg')">
+            <div class="banner-mid">
+                <div class="banner-inside" style="background-image: url('img/banner.jpg')"></div>
+            </div>
+        </div>
     </section>
     <!--  activity區域 -->
     <section id="activity">
         <div class="container">
             <div class="row">
-                <div class="activity-1 col-xl-6 col-md-6">
-                    <div class="activity-img-1"
-                        style="background-image: url('https://images.unsplash.com/photo-1472491235688-bdc81a63246e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')">
+                <div class="desktop-tablet-activity">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2 col-xl-6 box-left">
+                            <div class="fontAll-1">
+                                <p class="font-1">加入八時神會員，享有全年9折優惠，是「全年9折」唷！</p>
+                                <p class="font-2">儲值單筆滿 1990 元，八時神送你專屬保溫瓶，回購不但有9折優惠，還另外折抵環保金2元。</p>
+                                <p>保溫瓶可以回購菜單上所有中杯的飲品！</p>
+                            </div>
+                            <div class="img-1">
+                                <a href="img/vip.jpg" data-lightbox="image-1" data-title="">
+                                    <img src="img/vip.jpg" alt="" width="100%">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8 offset-md-2 col-xl-6 box-right">
+                            <div class="fontAll-2">
+                                <p class="font-1">海龜的求救聲在網路瘋狂轉載，在這個重視便利的環境，要讓塑膠吸管消失是坎坷的道路，我們只能盡力做點什麼。</p>
+                                <p class="font-2">不鏽鋼吸管一組 99 元，每售出一組我們將捐贈 10 元給綠色和平組織。</p>
+                            </div>
+                            <div class="img-2">
+                                <a href="img/straw.jpg" data-lightbox="image-1" data-title="">
+                                    <img src="img/straw.jpg" alt="" width="100%">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="activity-2 col-xl-6 col-md-6">
-                    <div class="activity-img-2"
-                        style="background-image: url('https://images.unsplash.com/photo-1517451330947-7809dead78d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')">
+                <!-- mobile -->
+                <div class="mobile-activity">
+                    <div class="row">
+                        <div class="col-6 box-left">
+                            <div class="fontAll-1">
+                                <p class="font-1">加入八時神會員，享有全年9折優惠，是「全年9折」唷！</p>
+                                <p class="font-2">儲值單筆滿 1990 元，八時神送你專屬保溫瓶，回購不但有9折優惠，還另外折抵環保金2元。</p>
+                                <p>保溫瓶可以回購菜單上所有中杯的飲品！</p>
+                            </div>
+                        </div>
+                        <div class="col-6 img-1">
+                            <a href="img/vip.jpg" data-lightbox="image-1" data-title="">
+                                <img src="img/vip.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row box-under">
+                        <div class="col-6">
+                            <div class="fontAll-2">
+                                <p class="font-1">海龜的求救聲在網路瘋狂轉載，在這個重視便利的環境，要讓塑膠吸管消失是坎坷的道路，我們只能盡力做點什麼。</p>
+                                <p class="font-2">不鏽鋼吸管一組 99 元，每售出一組我們將捐贈 10 元給綠色和平組織。</p>
+                            </div>
+                        </div>
+                        <div class="col-6 img-2">
+                            <a href="img/straw.jpg" data-lightbox="image-1" data-title="">
+                                <img src="img/straw.jpg" alt="" width="100%">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- swiper區域 -->
-    <section id="product-swiper" class="col-xl-12 col-md-12">
-        <div class="swiper-container">
+    <section id="product-swiper">
+        <!-- swiper computer -->
+        <div class="container swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide bg-img"
-                    style="background-image: url('https://images.unsplash.com/photo-1535819982781-87e951f67cce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')">
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="box-img">
+                                <div class="img-swiper" style="background-image: url('img/no1.jpg')"></div>
+                            </div>
+                        </div>
+                        <div class="img-swiper2" style="background-image: url('img/no2.jpg')"></div>
+                    </div>
                 </div>
-                <div class="swiper-slide bg-img"
-                    style="background-image: url('https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')">
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="box-img">
+                                <div class="img-swiper" style="background-image: url('img/no3.jpg')"></div>
+                            </div>
+                        </div>
+                        <div class="img-swiper2" style="background-image: url('img/no4.jpg')"></div>
+                    </div>
                 </div>
-                <div class="swiper-slide bg-img"
-                    style="background-image: url('https://images.unsplash.com/photo-1507984211203-76701d7bb120?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')">
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="box-img">
+                                <div class="img-swiper" style="background-image: url('img/no5.jpg')"></div>
+                            </div>
+                        </div>
+                        <div class="img-swiper2" style="background-image: url('img/no6.jpg')"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="box-img">
+                                <div class="img-swiper" style="background-image: url('img/no7.jpg')"></div>
+                            </div>
+                        </div>
+                        <div class="img-swiper2" style="background-image: url('img/no1.jpg')"></div>
+                    </div>
                 </div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination swiper-pagination-white"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <!-- 箭頭 -->
+            <div class="arrowBox-computer">
+                <div class="arrowAll">
+                    <div class="box-74">
+                        <i class="button-prev fas fa-angle-left"></i>
+                    </div>
+                    <div class="box-74">
+                        <i class="button-next fas fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        <!-- swiper tablet -->
+        <div class="container swiper-container2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="box-img">
+                                <div class="img-swiper" style="background-image: url('img/no1.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="box-img">
+                                <div class="img-swiper" style="background-image: url('img/no2.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="box-img">
+                                <div class="img-swiper" style="background-image: url('img/no3.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="box-img">
+                                <div class="img-swiper" style="background-image: url('img/no4.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="box-img">
+                                <div class="img-swiper" style="background-image: url('img/no5.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="box-img">
+                                <div class="img-swiper" style="background-image: url('img/no6.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="box-img">
+                                <div class="img-swiper" style="background-image: url('img/no7.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 箭頭 -->
+            <div class="arrowBox-tablet">
+                <div class="arrowAll">
+                    <i class="button-prev2 fas fa-angle-left"></i>
+                    <i class="button-next2 fas fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 
@@ -621,20 +792,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-    <!-- 2019-09-18 (瑄)我在這裡載入swiper) -->
+    <!-- (瑄)的區塊 -->
+
+    <!-- 載入swiper的js) -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- 載入lightbox的js  -->
+    <script src="lightbox2-2.11.1/lightbox2-2.11.1/dist/js/lightbox.js"></script>
+    <!-- 匯入(瑄)撰寫的js -->
+    <script src="banner+activity+swiper.js"></script>
 
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
-    <!--  結束 2019-09-18 (瑄) -->
-
+    <!-- (瑄)的區塊 -->
+    
     <!-- ↓↓ Menu--by sui ↓↓ 2019-09-21新增 -->
     <script>
         function openModal_1() {

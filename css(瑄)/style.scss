@@ -1,59 +1,374 @@
+@import "_RWD.scss";
+
 html {
     scroll-behavior: smooth;
-    font-family: 'Manjari', 'Noto Sans TC', sans-serif;
+    font-family: "Manjari", "Noto Sans TC", sans-serif;
 }
 // Banner + 活動 + 輪播 (瑄)
 // 2019-09-18 新增的 (瑄)
 
-*{
+* {
     box-sizing: border-box;
 }
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-// col-xl 和 col-md 中間的會有 col-lg，經過討論暫且不把col-lg關掉 
-
-// #activity .container {
-//     @media (min-width: 992px) {
-//         max-width: 720px;
-//     }    
-//     @media (min-width: 1200px) {
-//         max-width: 1140px;
-//     }
-// }
-#banner{
-    height: calc(100vh - 120px);
-    width: 100%;
+p {
+    padding: 0;
+    margin: 0;
 }
-// activity區域
-#activity{
-    padding-top: 120px;
 
-    .activity-img-1{
-        height: 310px;
+// banner區域
+#banner {
+    .banner-outer {
+        width: 100vw;
+        height: calc(100vh - 120px);
         background-size: cover;
-        background-position: center;
-    
+        .banner-mid {
+            width: 100vw;
+            height: 100%;
+            background-color: rgba(14, 63, 34, 0.4);
+            .banner-inside {
+                padding: 120px 0;
+                background-repeat: no-repeat;
+                width: 100vw;
+                height: 100%;
+                background-position: center;
+                background-size: contain;
+            }
+        }
     }
-    .activity-img-2{
-        height: 310px;
-        background-size: cover;
-        background-position: center;
-    
+}
+
+// activity區域
+#activity {
+    @include mobile() {
+        .container {
+            margin-top: 60px;
+            .desktop-tablet-activity {
+                display: none;
+            }
+            .mobile-activity {
+                .box-left {
+                    .fontAll-1 {
+                        width: 100%;
+                        .font-1 {
+                            margin-top: 30px 0;
+                            padding-top: 33px;
+                        }
+                        .font-2 {
+                            padding-top: 57px;
+                        }
+                    }
+                    .img-1 {
+                        width: 100%;
+                    }
+                }
+                .box-under {
+                    margin: 60px 0;
+                    .fontAll-2 {
+                        width: 100%;
+                        .font-1 {
+                            width: 100%;
+                            padding-bottom: 30px;
+                        }
+                        .font-2 {
+                            width: 100%;
+                        }
+                    }
+                    .img-2 {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    @include tablet() {
+        .container {
+            .mobile-activity {
+                display: none;
+            }
+            .desktop-tablet-activity {
+                margin-top: 120px;
+                .row {
+                    .box-left {
+                        display: flex;
+                        .fontAll-1 {
+                            width: calc(50% - 15px);
+                            .font-1 {
+                                padding-top: 33px;
+                            }
+                            .font-2 {
+                                padding-top: 57px;
+                            }
+                        }
+                        .img-1 {
+                            margin-left: 30px;
+                            width: calc(50% - 15px);
+                        }
+                    }
+                    .box-right {
+                        display: flex;
+                        margin: 60px auto;
+                        .fontAll-2 {
+                            width: calc(50% - 45px);
+                            .font-1 {
+                                padding-top: 10.5px;
+                            }
+                            .font-2 {
+                                padding-top: 59.3px;
+                            }
+                        }
+                        .img-2 {
+                            margin-left: 30px;
+                            width: calc(50% + 15px);
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include computer() {
+        .offset-md-2 {
+            margin-left: unset;
+        }
+        .container {
+            .mobile-activity {
+                display: none;
+            }
+            .desktop-tablet-activity {
+                margin: 120px auto;
+                .row {
+                    .box-left {
+                        display: flex;
+                        .fontAll-1 {
+                            width: 61.6%;
+                            .font-1 {
+                                padding-top: 46px;
+                            }
+                            .font-2 {
+                                padding-top: 60px;
+                            }
+                        }
+                        .img-1 {
+                            width: 38.4%;
+                            height: 100%;
+                            margin-left: 30px;
+                            margin-top: unset;
+                        }
+                    }
+                    .box-right {
+                        display: flex;
+                        .fontAll-2 {
+                            width: 57%;
+                            .font-1 {
+                                padding-top: 46px;
+                            }
+                            .font-2 {
+                                padding-top: 60px;
+                            }
+                        }
+                        .img-2 {
+                            width: 43%;
+                            height: 100%;
+                            margin-top: unset;
+                            margin-left: 30px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 // swiper 區域
-#product-swiper{
-    padding-top: 120px;
-    .swiper-container {
-        width: 100%;
-        height: 310px;
-      }
-    .bg-img {
-        background-size: cover;
-        background-position: center;
+#product-swiper {
+    @include mobile() {
+        .arrowBox-computer {
+            display: none;
+        }
+        %img-swiper-mobile {
+            width: 100%;
+            height: 310px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        %arrow-mobile {
+            cursor: pointer;
+            font-size: 45px;
+        }
+        .container.swiper-container2 {
+            max-width: unset;
+            position: relative;
+            overflow: hidden;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            .swiper-wrapper {
+                .row {
+                    margin: 0;
+                    .col-md-8,
+                    .offset-md-2 {
+                        width: 100vw;
+                        padding: 0;
+                        .box-img {
+                            .img-swiper {
+                                @extend %img-swiper-mobile;
+                            }
+                        }
+                    }
+                }
+                // 箭頭屬性
+            }
+            .arrowBox-tablet {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                .arrowAll {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 100%;
+                    .button-prev2 {
+                        @extend %arrow-mobile;
+                    }
+                    .button-next2 {
+                        @extend %arrow-mobile;
+                    }
+                }
+            }
+        }
+    }
+    @include tablet() {
+        .arrowBox-computer {
+            display: none;
+        }
+        %img-swiper-md {
+            width: 100%;
+            height: 310px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        %arrow-md {
+            cursor: pointer;
+            font-size: 45px;
+        }
+        .container.swiper-container2 {
+            position: relative;
+            overflow: hidden;
+            .swiper-wrapper {
+                .box-img {
+                    .img-swiper {
+                        @extend %img-swiper-md;
+                    }
+                }
+            }
+
+            // 箭頭屬性
+            .arrowBox-tablet {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 15px;
+                z-index: 1;
+                .arrowAll {
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 310px;
+                    display: flex;
+                    .button-prev2 {
+                        @extend %arrow-md;
+                        padding-left: 45px;
+                    }
+                    .button-next2 {
+                        @extend %arrow-md;
+                        padding-right: 45px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include computer() {
+        %img-swiper-init {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        %arrow {
+            cursor: pointer;
+            font-size: 45px;
+        }
+        .swiper-container2 {
+            display: none;
+        }
+        .arrowBox-computer {
+            display: block;
+        }
+        .arrowBox-tablet {
+            display: none;
+        }
+        .container {
+            position: relative;
+            height: 310px;
+            overflow: hidden;
+            .arrowBox-computer {
+                width: 1110px;
+                position: absolute;
+                top: 0;
+                left: 15px;
+                z-index: 1;
+                .arrowAll {
+                    display: flex;
+                    justify-content: space-between;
+                    .box-74 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 74px;
+                        height: 310px;
+                        .button-prev {
+                            @extend %arrow;
+                        }
+                        .button-next {
+                            @extend %arrow;
+                        }
+                    }
+                }
+            }
+            .swiper-wrapper {
+                .row {
+                    height: 100%;
+                    .col-xl-6 {
+                        height: 100%;
+                        .img-swiper {
+                            @extend %img-swiper-init;
+                        }
+                        .box-img {
+                            height: 100%;
+                            padding-left: 74px;
+                        }
+                    }
+                    .img-swiper2 {
+                        width: 40.88%;
+                        margin-left: 15px;
+                        @extend %img-swiper-init;
+                    }
+                }
+            }
+        }
     }
 }
 
