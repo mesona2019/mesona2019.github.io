@@ -72,6 +72,106 @@ body{
 }
 
 /* 結束 2019-09-18新增的 (瑄)*/
+/* ↓↓ story+about by Derrick ↓↓ 2019-09-23 */
+#story{
+    padding-top: 120px;
+}
+
+.car_img {
+    height: 310px;
+    margin-bottom: 60px;
+}
+
+.img_ {
+    width: 100%;
+    height: 100%;
+}
+
+.Story2013 {
+    justify-content: center;
+}
+
+.old_store {
+    padding-top: 50px;
+}
+.OldLogo{
+    padding-top: 60px;
+}
+
+.VideoContainer {
+    width: 465px;
+    height: 310px;
+    background-color: black;
+    padding-top: 25px;
+}
+
+.NewStore-img {
+    padding-top: 215px;
+}
+
+.NewStoreContent {
+    padding-top: 75px;
+}
+
+#about {
+    padding-top: 120px;
+}
+
+.about_us {
+    justify-content: center;
+}
+
+.about_title {
+    justify-content: start;
+}
+
+.VideoGroup {
+    padding: 60px 0;
+    justify-content: center;
+}
+
+@media(max-width:1199px) {
+    .car_img {
+        margin: 60px 0;
+    }
+
+    .img_ {
+        height: 310px;
+    } */
+
+    .offset-xl-2 {
+        margin-left: 0;
+    }
+    .videoA{
+        margin-bottom: 60px;
+    }
+    .NewStoreContent{
+        order: 1;
+        padding-bottom: 30px;
+    }
+    .OldLogo{
+        order: 2;
+    }
+    .NewStore-img{
+        order: 3;
+    }
+    .car_img-tablet{
+        margin-top: 60px;
+        width: 329px;
+        height: 310px;
+
+    }
+    .car_img-tablet .img_tablet{
+        width: 100%;
+        height: 100%;
+        background-position:0 -30px;
+        background-size: cover; 
+    }
+    .car_img{
+        display: none;
+    }
+    }
+/* ↑↑ story+about by Derrick ↑↑ 2019-09-23 */
 
 /* ↓↓ Mesona Introduce--by sui ↓↓ 2019-09-21新增 */
 #mesona {
@@ -507,4 +607,5 @@ footer p {
     background-position: center;
     max-width: 100%;
 }
+
 /* 結束--2019-09-22 add by Lynn */
