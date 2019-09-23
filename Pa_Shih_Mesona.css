@@ -271,6 +271,193 @@ footer p {
 /* ↑↑ footer--by sui ↑↑ 2019-09-21新增 */
 
 
+/* parallax+interview+contact_by_chiwen_2019_09_23 */
+#interview h1 {
+    margin: 45px 0;
+}
+#contact h1 {
+    margin: 45px 0;
+}
+#interview a{
+    font-size: 22px;
+}
+.contact_information p{
+    margin: 0;
+    padding: 10px 0 10px 80px;
+}
+.cooperation_platform p{
+    margin: 0;
+    padding: 10px 0 10px 80px;
+}
+
+
+.parallax_content {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 120px;
+    background-image: url("/img/all.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+    background-attachment: fixed;
+}
+
+.media_content {
+    margin-left: 80px;
+    line-height: 40px;
+    margin-bottom: 120px;
+}
+.media_content i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: gray;
+}
+
+
+.contact_information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.contact_information .community_app {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+.contact_information .community_app .messenger {
+    width: 60px;
+    height: 60px;
+
+}
+.contact_information .community_app .facebook {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 30px;
+}
+.contact_information .community_app .messenger i {
+    color: dodgerblue;
+    font-size: 60px;
+}
+.contact_information .community_app .facebook i {
+    color: darkblue;
+    font-size: 60px;
+    
+}
+.contact_information .community_app .instagram i {
+    color: coral;
+    font-size: 60px;
+}
+.contact_information .community_app .instagram {
+    width: 60px;
+    height: 60px;
+
+}
+.cooperation_platform {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cooperation_platform .delivery_app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cooperation_platform .delivery_app .order {
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+.cooperation_platform .delivery_app .order .app_img {
+    
+    height: 100%;
+}
+
+.cooperation_platform .delivery_app .ubereats {
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+.cooperation_platform .delivery_app .ubereats .app_img {
+    
+    height: 100%;
+
+}
+
+@media(max-width: 767px) {
+    .parallax_content {
+        height: 50vh;
+        background-size: contain;
+        background-position-y: unset;
+        background-repeat: no-repeat;
+    }
+    .contact_information {
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0;
+    }
+
+    .cooperation_platform {
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .contact_information .address_time p{
+        padding: 10px 0 10px 0;
+    }
+    .contact_information .community_app {
+        justify-content: center;
+        margin: 30px 0 30px 0;
+    }
+
+    .contact_information .community_app .facebook {
+        margin: 0 40px;
+    }
+    .cooperation_platform .platforms p{
+        padding: 10px 0 10px 0;
+    }
+    .cooperation_platform .delivery_app p{
+        padding: 10px 0 10px 0;
+    }
+    .cooperation_platform .delivery_app {
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .cooperation_platform .delivery_app .text {
+        display: none;
+    }
+    .cooperation_platform .delivery_app .order {
+        margin: unset;
+    }
+    
+    .cooperation_platform .delivery_app .ubereats {
+        margin-left: 60px;
+    }
+
+}
+
+@media(max-width: 575px) {
+    .media_content {
+        margin: 0;
+    }
+    .parallax_content {
+        height: 50vh;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+}
+/* parallax+interview+contact_by_chiwen_2019_09_23 */
+
+
+
 /* 開始--2019-09-22 add by Lynn */
     /* 800px 以上顯示 */
 @media only screen and (min-width: 800px){
