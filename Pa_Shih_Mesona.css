@@ -496,4 +496,9 @@ footer p {
 .text-color{
     color:white;
 }
+.ed-img {
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
 /* 結束--2019-09-22 add by Lynn */
