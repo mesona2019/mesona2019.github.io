@@ -18,14 +18,18 @@ p {
   margin: 0;
 }
 
+#banner {
+  margin-top: 120px;
+}
+
 #banner .banner-outer {
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 120px);
   background-size: cover;
 }
 
 #banner .banner-outer .banner-mid {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-color: rgba(14, 63, 34, 0.4);
 }
@@ -33,7 +37,7 @@ p {
 #banner .banner-outer .banner-mid .banner-inside {
   padding: 120px 0;
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-position: center;
   background-size: contain;

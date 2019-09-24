@@ -2,14 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 h1 {
-    font-family: 'Manjari', 'Noto Sans TC', sans-serif;
+    font-family: "Manjari", "Noto Sans TC", sans-serif;
     margin: 0;
     font-size: 40px;
     line-height: normal;
     color: rgb(14, 63, 34);
 }
 p {
-    font-family: 'Manjari', 'Noto Sans TC', sans-serif;
+    font-family: "Manjari", "Noto Sans TC", sans-serif;
     margin: 0;
     font-size: 26px;
     line-height: normal;
@@ -29,7 +29,7 @@ nav .container ul .dropdown-menu {
     box-shadow: 0 4px 8px 0 rgba(14, 63, 34, 0.2), 0 6px 20px 0 rgba(14, 63, 34, 0.19);
     position: absolute;
 }
-@media(max-width:576px) {
+@media (max-width: 576px) {
     nav .container ul li {
         padding-right: 17px;
     }
@@ -38,34 +38,34 @@ nav .container ul .dropdown-menu {
 
 /* Banner + 活動 + 輪播 (瑄) */
 /* 2019-09-18 新增的 (瑄)*/
-*{
+* {
     box-sizing: border-box;
 }
-body{
+body {
     margin: 0;
     padding: 0;
 }
-#banner{
+#banner {
     height: calc(100vh - 120px);
     width: 100%;
 }
-#activity{
+#activity {
     padding-top: 120px;
 }
-.activity_1{
+.activity_1 {
     height: 310px;
 }
-.activity_2{
+.activity_2 {
     height: 310px;
 }
 /* swiper 區域 */
-#product_swiper{
+#product_swiper {
     padding-top: 120px;
 }
 .swiper-container {
     width: 100%;
     height: 310px;
-  }
+}
 .bg-img {
     background-size: cover;
     background-position: center;
@@ -73,7 +73,7 @@ body{
 
 /* 結束 2019-09-18新增的 (瑄)*/
 /* ↓↓ story+about by Derrick ↓↓ 2019-09-23 */
-#story{
+#story {
     padding-top: 120px;
 }
 
@@ -92,9 +92,9 @@ body{
 }
 
 .old_store {
-    padding-top: 60px; 
+    padding-top: 60px;
 }
-.OldLogo{
+.OldLogo {
     padding-top: 60px;
 }
 
@@ -125,7 +125,7 @@ body{
     justify-content: start;
 }
 
-.about_content{
+.about_content {
     padding-top: 60px;
 }
 .VideoGroup {
@@ -133,47 +133,45 @@ body{
     justify-content: center;
 }
 
-@media(max-width:1199px) {
+@media (max-width: 1199px) {
     .car_img {
         margin: 60px 0;
     }
 
     .img_ {
         height: 310px;
-    } */
-
-    .offset-xl-2 {
+    }
+    */ .offset-xl-2 {
         margin-left: 0;
     }
-    .videoA{
+    .videoA {
         margin-bottom: 60px;
     }
-    .NewStoreContent{
+    .NewStoreContent {
         order: 1;
         padding-bottom: 30px;
     }
-    .OldLogo{
+    .OldLogo {
         order: 2;
     }
-    .NewStore-img{
+    .NewStore-img {
         order: 3;
     }
-    .car_img-tablet{
+    .car_img-tablet {
         margin-top: 60px;
         width: 329px;
         height: 310px;
-
     }
-    .car_img-tablet .img_tablet{
+    .car_img-tablet .img_tablet {
         width: 100%;
         height: 100%;
-        background-position:0 -30px;
-        background-size: cover; 
+        background-position: 0 -30px;
+        background-size: cover;
     }
-    .car_img{
+    .car_img {
         display: none;
     }
-    }
+}
 /* ↑↑ story+about by Derrick ↑↑ 2019-09-23 */
 
 /* ↓↓ Mesona Introduce--by sui ↓↓ 2019-09-21新增 */
@@ -208,30 +206,31 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #menu .menu_a {
-    background-image: url('./img/mesona_jelly.jpg')
+    background-image: url("./img/mesona_jelly.jpg");
 }
 #menu .menu_b {
-    background-image: url('./img/ice.jpg')
+    background-image: url("./img/ice.jpg");
 }
 #menu .menu_c {
-    background-image: url('./img/smoothie.jpg')
+    background-image: url("./img/smoothie.jpg");
 }
 #menu .menu_d {
-    background-image: url('./img/tea.jpg')
+    background-image: url("./img/tea.jpg");
 }
 #menu .menu_e {
-    background-image: url('./img/brown_sugar.jpg')
+    background-image: url("./img/brown_sugar.jpg");
 }
 #menu .menu_f {
-    background-image: url('./img/hot_mesona.jpg')
+    background-image: url("./img/hot_mesona.jpg");
 }
 #menu .menu_g {
-    background-image: url('./img/dessert.jpg')
+    background-image: url("./img/dessert.jpg");
 }
 #menu .menu_h {
-    background-image: url('./img/ginger_brown_sugar.jpg')
+    background-image: url("./img/ginger_brown_sugar.jpg");
 }
-#menu .menu_1.row .cursor p,#menu .menu_2.row .cursor p {
+#menu .menu_1.row .cursor p,
+#menu .menu_2.row .cursor p {
     padding: 10px;
 }
 #menu .modal {
@@ -260,7 +259,8 @@ body{
     font-size: 35px;
     font-weight: bold;
 }
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
@@ -275,7 +275,8 @@ body{
     width: 50%;
     padding: 75px 60px;
 }
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -301,8 +302,7 @@ body{
     padding: 75px 60px;
 }
 
-
-@media(max-width: 992px) {
+@media (max-width: 992px) {
     #menu .row .col.cursor {
         min-width: 30%;
     }
@@ -323,7 +323,7 @@ body{
         padding: 30px 60px;
     }
 }
-@media(max-width: 576px) {
+@media (max-width: 576px) {
     #menu #menu_group .modal-content .mySlides .menu_part {
         padding: 30px 30px;
     }
@@ -332,7 +332,6 @@ body{
     }
 }
 /* ↑↑ Menu--by sui ↑↑ 2019-09-21新增 */
-
 
 /* ↓↓ footer--by sui ↓↓ 2019-09-21新增 */
 footer {
@@ -353,8 +352,8 @@ footer p {
     font-size: 13px;
     color: white;
 }
-@media(max-width:768px) {
-    footer .container .content i{
+@media (max-width: 768px) {
+    footer .container .content i {
         font-size: 26px;
         margin-left: 15px;
     }
@@ -362,8 +361,8 @@ footer p {
         font-size: 20px;
     }
 }
-@media(max-width:576px) {
-    footer .container .content i{
+@media (max-width: 576px) {
+    footer .container .content i {
         font-size: 18px;
         margin-left: 10px;
     }
@@ -373,12 +372,11 @@ footer p {
 }
 /* ↑↑ footer--by sui ↑↑ 2019-09-21新增 */
 
-
 /* parallax+interview+contact_by_chiwen_2019_09_23 */
-#interview{
+#interview {
     padding-top: 120px;
 }
-#contact{
+#contact {
     padding-top: 120px;
 }
 #interview h1 {
@@ -387,23 +385,22 @@ footer p {
 #contact h1 {
     margin: 45px 0;
 }
-#interview a{
+#interview a {
     font-size: 22px;
 }
-.contact_information p{
+.contact_information p {
     margin: 0;
     padding: 10px 0 10px 80px;
 }
-.cooperation_platform p{
+.cooperation_platform p {
     margin: 0;
     padding: 10px 0 10px 80px;
 }
-
 
 .parallax_content {
     width: 100%;
     height: 100vh;
-    
+
     background-image: url("/img/all.jpg");
     background-size: cover;
     background-position-y: 60%;
@@ -413,14 +410,12 @@ footer p {
 .media_content {
     margin-left: 80px;
     line-height: 40px;
-    
 }
-.media_content i{
+.media_content i {
     font-size: 20px;
     margin-right: 10px;
     color: gray;
 }
-
 
 .contact_information {
     display: flex;
@@ -438,7 +433,6 @@ footer p {
 .contact_information .community_app .messenger {
     width: 60px;
     height: 60px;
-
 }
 .contact_information .community_app .facebook {
     width: 60px;
@@ -453,7 +447,6 @@ footer p {
 .contact_information .community_app .facebook i {
     color: darkblue;
     font-size: 60px;
-    
 }
 .contact_information .community_app .instagram i {
     color: coral;
@@ -462,7 +455,6 @@ footer p {
 .contact_information .community_app .instagram {
     width: 60px;
     height: 60px;
-
 }
 .cooperation_platform {
     display: flex;
@@ -483,7 +475,6 @@ footer p {
 }
 
 .cooperation_platform .delivery_app .order .app_img {
-    
     height: 100%;
 }
 
@@ -494,12 +485,10 @@ footer p {
 }
 
 .cooperation_platform .delivery_app .ubereats .app_img {
-    
     height: 100%;
-
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
     .parallax_content {
         height: 50vh;
         background-size: contain;
@@ -518,7 +507,7 @@ footer p {
         flex-wrap: wrap;
         text-align: center;
     }
-    .contact_information .address_time p{
+    .contact_information .address_time p {
         padding: 10px 0 10px 0;
     }
     .contact_information .community_app {
@@ -529,10 +518,10 @@ footer p {
     .contact_information .community_app .facebook {
         margin: 0 40px;
     }
-    .cooperation_platform .platforms p{
+    .cooperation_platform .platforms p {
         padding: 10px 0 10px 0;
     }
-    .cooperation_platform .delivery_app p{
+    .cooperation_platform .delivery_app p {
         padding: 10px 0 10px 0;
     }
     .cooperation_platform .delivery_app {
@@ -545,14 +534,13 @@ footer p {
     .cooperation_platform .delivery_app .order {
         margin: unset;
     }
-    
+
     .cooperation_platform .delivery_app .ubereats {
         margin-left: 60px;
     }
-
 }
 
-@media(max-width: 575px) {
+@media (max-width: 575px) {
     .media_content {
         margin: 0;
     }
@@ -565,45 +553,44 @@ footer p {
 }
 /* parallax+interview+contact_by_chiwen_2019_09_23 */
 
-
-
 /* 開始--2019-09-22 add by Lynn */
-    /* 800px 以上顯示 */
-@media only screen and (min-width: 800px){
+/* 800px 以上顯示 */
+@media only screen and (min-width: 800px) {
     .grid-container {
-    display: grid;
-    grid-template-columns:auto auto auto;
-    grid-gap: 50px 10px;
-    padding: 10px;
-}
-    .mr-lr{
-        margin:0 80px;
-}
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 50px 10px;
+        padding: 10px;
+    }
+    .mr-lr {
+        margin: 0 80px;
+    }
 }
 
 /* 800px 以下顯示 */
-@media (max-width: 800px){
-    #endding_img img{
+@media (max-width: 800px) {
+    #endding_img img {
         max-height: 310px;
-        max-width: 100%;}
+        max-width: 100%;
+    }
     .grid-container {
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 70px 30px;
         padding: 10px;
+    }
 }
-}
-.grid-container>div {
-    background-color:#736357;
+.grid-container > div {
+    background-color: #736357;
     text-align: center;
     padding: 10px 0;
     font-size: 20px;
 }
 .mr-up {
     margin: 50px 0 0 0;
-}   
-.text-color{
-    color:white;
+}
+.text-color {
+    color: white;
 }
 .ed-img {
     background-size: cover;
