@@ -102,7 +102,6 @@ body {
     width: 465px;
     height: 310px;
     background-color: black;
-    padding-top: 25px;
 }
 
 .NewStore-img {
@@ -131,6 +130,10 @@ body {
 .VideoGroup {
     padding: 60px 0;
     justify-content: center;
+}
+.videoB{
+    padding-top: 22px;
+
 }
 
 @media (max-width: 1199px) {
