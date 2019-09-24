@@ -239,6 +239,9 @@ p {
   #product-swiper .arrowBox-computer {
     display: none;
   }
+  #product-swiper .swiper-container {
+    display: none;
+  }
   #product-swiper .container.swiper-container2 .swiper-wrapper .box-img .img-swiper {
     width: 100%;
     height: 310px;
