@@ -102,7 +102,6 @@ body{
     width: 465px;
     height: 310px;
     background-color: black;
-    padding-top: 25px;
 }
 
 .NewStore-img {
@@ -131,6 +130,10 @@ body{
 .VideoGroup {
     padding: 60px 0;
     justify-content: center;
+}
+.videoB{
+    padding-top: 22px;
+
 }
 
 @media(max-width:1199px) {
@@ -173,7 +176,25 @@ body{
     .car_img{
         display: none;
     }
+}
+
+@media(max-width:464px){
+    .VideoContainer {
+        width: 100%;
+        /* padding: 25px 0px!important;
+        padding-top: unset; */
+        position: relative;
+        padding-bottom:66%;
     }
+    .VideoContainer iframe {
+        width: 100%;
+        position: absolute;    
+    }
+    .videoB{
+        padding-top:15%;
+    
+    }
+}
 /* ↑↑ story+about by Derrick ↑↑ 2019-09-23 */
 
 /* ↓↓ Mesona Introduce--by sui ↓↓ 2019-09-21新增 */
