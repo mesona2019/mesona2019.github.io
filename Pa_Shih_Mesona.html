@@ -94,9 +94,9 @@
     
     <!-- banner區域 -->
     <section id="banner">
-        <div class="banner-outer" style="background-image: url('img/banner.jpg')">
+        <div class="banner-outer">
             <div class="banner-mid">
-                <div class="banner-inside" style="background-image: url('img/banner.jpg')"></div>
+                <div class="banner-inside"></div>
             </div>
         </div>
     </section>
@@ -106,7 +106,7 @@
             <div class="row">
                 <div class="desktop-tablet-activity">
                     <div class="row">
-                        <div class="col-md-8 offset-md-2 col-xl-6 box-left">
+                        <div class="col-md-8 offset-md-2 col-xl-6 box-left align-items-center">
                             <div class="fontAll-1">
                                 <p class="font-1">加入八時神會員，享有全年9折優惠，是「全年9折」唷！</p>
                                 <p class="font-2">儲值單筆滿 1990 元，八時神送你專屬保溫瓶，回購不但有9折優惠，還另外折抵環保金2元。</p>
@@ -118,7 +118,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-8 offset-md-2 col-xl-6 box-right">
+                        <div class="col-md-8 offset-md-2 col-xl-6 box-right align-items-center">
                             <div class="fontAll-2">
                                 <p class="font-1">海龜的求救聲在網路瘋狂轉載，在這個重視便利的環境，要讓塑膠吸管消失是坎坷的道路，我們只能盡力做點什麼。</p>
                                 <p class="font-2">不鏽鋼吸管一組 99 元，每售出一組我們將捐贈 10 元給綠色和平組織。</p>
@@ -165,9 +165,9 @@
         </div>
     </section>
     <!-- swiper區域 -->
-    <section id="product-swiper">
+    <section id="product-swiper" class="position-relative">
         <!-- swiper computer -->
-        <div class="container swiper-container">
+        <div class="container swiper-container position-absolute">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="row">
@@ -305,31 +305,36 @@
     <!-- ↓↓ story by Derrick ↓↓ 2019-09-23 -->
     <section id="story">
         <div class="container">
-            <h1 style="font-size: 40px;" class="title">八時神仙草的故事</h1>
-            <div class="row Story2013">
-                <div class="col-xl-6 col-md-12 col-12 old_store">
+            <h1 class="title">八時神仙草的故事</h1>
+            <div class="row align-items-center justify-content-around">
+                <div class="col-md-1"></div>
+                <div class="col-md-6 col-12 Story2013">
                     <p>2013年，
                         那時的我們很青澀，租了一間攤販們口中的倉庫當作八時神的第一家店面，命名『神仙草』，前面三個月我們每天都無法販售超過50碗仙草，不過我們堅信自己正在做對的事情，所以我們決不放棄，半年後在消費者的口耳相傳下每天人潮絡繹不絕，八時神在逢甲創造了不可能的奇蹟，因為那間店面在我們離開後至今默默依然是間倉庫。
                     </p>
                 </div>
-                <div class="col-xl-4 col-md-6 car_img">
+                <div class="col-lg-4 col-md-5 col-8">
                     <img class="img_" src="/img/history.jpg" alt="">
                 </div>
-                <div class="col-xl-4 col-md-6 col-12 car_img-tablet">
+                <!-- <div class="col-xl-4 col-md-6 col-12 car_img-tablet">
                     <div class="img_tablet" style="background-image: url('./img/history.jpg')"></div>
-                </div>
+                </div> -->
             </div>
-            <div class="row">
-                <div class="col-xl-2 col-md-5 col-4 OldLogo" >
-                    <img src="/img/logo_ago.jpg" alt="" width="100%">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 d-flex flex-column order-md-0 order-1">
+                    <img src="/img/logo_ago.jpg" alt="" style="width: 35%">
+                    <img class="align-self-end" src="/img/shop_outside.jpg" alt="" style="width: 65%">
+                </div>
+                <!-- <div class="col-xl-2 col-md-5 col-4 OldLogo" >
+                    <img src="/img/logo_ago.jpg" alt="">
                 </div>
                 <div class="col-xl-4 col-md-7 col-7 NewStore-img">
                     <img src="/img/shop_outside.jpg" alt="" width="100%">
-                </div>
-                <div class="col-xl-6 NewStoreContent">
-                    <p>2019年，神仙草邁向6歲的時候，我們決定給它取個新名字-「八時神仙草」。
-                        八時神仙草不單單只是更名，我們也給新名字換上新衣裳，而我們的Logo脫下了醒目的紅色，穿上了清新的綠色。
-                        我們認為綠色更能代表「八時神仙草」，因為仙草乾在還沒日曬前確實是綠色嘛，也因為「草」這個字，我們跟綠色又更親近了呢！
+                </div> -->
+                <div class="col-md-6 NewStoreContent">
+                    <p>2019年，神仙草邁向6歲的時候，我們決定給它取個新名字-「八時神仙草」。<br>
+                    八時神仙草不單單只是更名，我們也給新名字換上新衣裳，而我們的Logo脫下了醒目的紅色，穿上了清新的綠色。<br>
+                    我們認為綠色更能代表「八時神仙草」，因為仙草乾在還沒日曬前確實是綠色嘛，也因為「草」這個字，我們跟綠色又更親近了呢！
                     </p>
                 </div>
             </div>
@@ -340,7 +345,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-2">
-                    <h1 style="font-size: 40px;" class="title">關於我們</h1>
+                    <h1 class="title">關於我們</h1>
                 </div>
             </div>
             <div class="row about_content">
@@ -382,18 +387,18 @@
         </div>
         <div class="container">
             <div class="row VideoGroup">
-                <div class="col-xl-6 col-md-12">
-                    <div class="row justify-content-center videoA">
-                            <div class="VideoContainer">
-                        <iframe
+                <div class="col-lg-6 col-12">
+                    <div class="justify-content-center videoA">
+                        <div class="VideoContainer">
+                            <iframe
                             src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fgodlike1019%2Fvideos%2F479614729248993%2F&show_text=0&width=560"
                             width="100%" height="310" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                             allowTransparency="true" allowFullScreen="true"></iframe>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-md-12">
-                    <div class="row justify-content-center">
+                <div class="col-lg-6 col-12">
+                    <div class="justify-content-center">
                         <div class="VideoContainer videoB">
                             <iframe
                                 src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fgodlike1019%2Fvideos%2F380094786005798%2F&show_text=0&width=560"
