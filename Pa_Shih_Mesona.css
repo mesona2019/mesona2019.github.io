@@ -17,6 +17,14 @@ p {
     line-height: normal;
     color: rgb(14, 63, 34);
 }
+@media(max-width:576px) {
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
 /* ↓↓ Navbar--by sui ↓↓ 2019-09-21新增 */
 nav .container ul .dropdown .btn-success {
     background-color: rgba(255, 255, 255, 0);
@@ -98,8 +106,19 @@ nav .container ul .dropdown-menu {
 .NewStoreContent {
     padding: 60px 15px;
 }
-.VideoContainer {
-    background-color: black;
+.video-container{
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;height:0;overflow:hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
 #about {
     padding-top: 120px;
@@ -174,6 +193,9 @@ nav .container ul .dropdown-menu {
 #menu .menu_f {
     background-image: url("./img/hot_mesona.jpg");
 }
+#menu .row .menu_img.menu_f {
+    background-position-x: 40%;
+}
 #menu .menu_g {
     background-image: url("./img/dessert.jpg");
 }
@@ -190,7 +212,7 @@ nav .container ul .dropdown-menu {
     z-index: 1280;
     width: 100%;
     height: 100vh;
-    padding: 30px 60px;
+    padding: 30px 50px;
     background-color: rgba(14, 63, 34, 0.7);
 }
 #menu .modal .modal-content {
@@ -280,6 +302,18 @@ nav .container ul .dropdown-menu {
     }
     #menu #menu_group_2 .modal-content .mySlides_2 .menu_part {
         padding: 30px 30px;
+    }
+    #menu #menu_group .modal-content .mySlides .menu_img,#menu #menu_group_2 .modal-content .mySlides_2 .menu_img {
+        height: 180px;
+    }
+    #menu .row .menu_img.menu_c,#menu .row .menu_img.menu_d,#menu .row .menu_img.menu_e {
+        height: 150px;
+    }
+    #menu .menu_2 .menu_img {
+        height: 150px;
+    }
+    #menu_group,#menu_group_2 {
+        font-size: 13px;
     }
 }
 /* ↑↑ Menu--by sui ↑↑ 2019-09-21新增 */
