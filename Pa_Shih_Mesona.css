@@ -320,34 +320,14 @@ footer p {
     footer h1 {
         font-size: 18px;
     }
+    footer .container .d-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 /* ↑↑ footer--by sui ↑↑ 2019-09-21新增 */
 
 /* parallax+interview+contact_by_chiwen_2019_09_23 */
-#interview {
-    padding-top: 120px;
-}
-#contact {
-    padding-top: 120px;
-}
-#interview h1 {
-    margin: 45px 0;
-}
-#contact h1 {
-    margin: 45px 0;
-}
-#interview a {
-    font-size: 22px;
-}
-.contact_information p {
-    margin: 0;
-    padding: 10px 0 10px 80px;
-}
-.cooperation_platform p {
-    margin: 0;
-    padding: 10px 0 10px 80px;
-}
-
 .parallax_content {
     margin-top: 120px;
     width: 100%;
@@ -358,39 +338,41 @@ footer p {
     background-position-y: 60%;
     background-attachment: fixed;
 }
-
-.media_content {
-    margin-left: 80px;
-    line-height: 40px;
+#interview {
+    padding-top: 120px;
 }
-.media_content i {
+#interview h1 {
+    padding-bottom: 60px;
+}
+#interview i {
     font-size: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
     color: gray;
 }
 
+#contact {
+    padding-top: 120px;
+}
+#contact h1 {
+    padding-bottom: 60px;
+}
 .contact_information {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 60px;
 }
-
 .contact_information .community_app {
     display: flex;
-    justify-content: flex-end;
-    margin: 10px 0;
+    justify-content: space-between;    
 }
-
 .contact_information .community_app .messenger {
     width: 60px;
     height: 60px;
 }
 .contact_information .community_app .facebook {
     width: 60px;
-    height: 60px;
-
-    margin: 0 30px;
+    height: 60px;   
 }
 .contact_information .community_app .messenger i {
     color: dodgerblue;
@@ -401,7 +383,7 @@ footer p {
     font-size: 60px;
 }
 .contact_information .community_app .instagram i {
-    color: coral;
+    color: deeppink;
     font-size: 60px;
 }
 .contact_information .community_app .instagram {
@@ -410,32 +392,27 @@ footer p {
 }
 .cooperation_platform {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-
 .cooperation_platform .delivery_app {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .cooperation_platform .delivery_app .order {
     width: 60px;
     height: 60px;
     margin-left: 30px;
 }
-
 .cooperation_platform .delivery_app .order .app_img {
     height: 100%;
 }
-
 .cooperation_platform .delivery_app .ubereats {
     width: 60px;
     height: 60px;
     margin-left: 30px;
 }
-
 .cooperation_platform .delivery_app .ubereats .app_img {
     height: 100%;
 }
@@ -451,9 +428,7 @@ footer p {
         display: block;
         flex-wrap: wrap;
         text-align: center;
-        margin: 0;
     }
-
     .cooperation_platform {
         display: block;
         flex-wrap: wrap;
@@ -466,7 +441,6 @@ footer p {
         justify-content: center;
         margin: 30px 0 30px 0;
     }
-
     .contact_information .community_app .facebook {
         margin: 0 40px;
     }
@@ -486,7 +460,6 @@ footer p {
     .cooperation_platform .delivery_app .order {
         margin: unset;
     }
-
     .cooperation_platform .delivery_app .ubereats {
         margin-left: 60px;
     }
@@ -506,48 +479,36 @@ footer p {
 /* parallax+interview+contact_by_chiwen_2019_09_23 */
 
 /* 開始--2019-09-22 add by Lynn */
-/* 800px 以上顯示 */
-@media only screen and (min-width: 800px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 50px 10px;
-        padding: 10px;
-    }
-    .mr-lr {
-        margin: 0 80px;
-    }
+#join {
+    padding-top: 120px;
 }
-
-/* 800px 以下顯示 */
-@media (max-width: 800px) {
-    #endding_img img {
-        max-height: 310px;
-        max-width: 100%;
-    }
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 70px 30px;
-        padding: 10px;
-    }
+#join>.container>p {
+    padding-top: 60px;
 }
-.grid-container > div {
-    background-color: #736357;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 20px;
+#join .container a p {
+    width: max-content;
+    margin: 60px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid rgb(14, 63, 34);
 }
-.mr-up {
-    margin: 50px 0 0 0;
-}
-.text-color {
+#join .container .row p {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(14, 63, 34);
     color: white;
 }
-.ed-img {
+
+#endding_img {
+    margin-top: 60px;
+    background-image: url('./img/all_2.jpg');
+    width: 100%;
+    height: 50vh;
     background-size: cover;
-    background-position: center;
-    max-width: 100%;
+    background-position-x: center;
+    background-position-y: 70%; 
 }
+
 
 /* 結束--2019-09-22 add by Lynn */
