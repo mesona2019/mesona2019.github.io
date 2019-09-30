@@ -175,6 +175,8 @@
 // swiper 區域
 #product-swiper {
     @include mobile() {
+        display: flex;
+        justify-content: center;
         .arrowBox-computer {
             display: none;
         }
@@ -235,6 +237,8 @@
         }
     }
     @include tablet() {
+        display: flex;
+        justify-content: center;
         .arrowBox-computer {
             display: none;
         }
@@ -290,6 +294,8 @@
     }
 
     @include computer() {
+        display: flex;
+        justify-content: center;
         %img-swiper-init {
             width: 100%;
             height: 100%;
